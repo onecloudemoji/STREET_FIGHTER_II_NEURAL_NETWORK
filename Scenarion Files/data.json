@@ -1,0 +1,28 @@
+{
+  "info": {
+    "continuetimer": {
+      "address": 8259014,
+      "type": "|u1"
+    },
+    "enemy_health": {
+      "address": 8259638,
+      "type": ">i2"
+    },
+    "enemy_matches_won": {
+      "address": 8259536,
+      "type": ">u4"
+    },
+    "health": {
+      "address": 8259126,
+      "type": ">i2"
+    },
+    "matches_won": {
+      "address": 8259024,
+      "type": "|u1"
+    },
+    "score": {
+      "address": 8259266,
+      "type": ">d4"
+    }
+  }
+}
