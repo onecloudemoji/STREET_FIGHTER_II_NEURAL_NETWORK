@@ -1,0 +1,34 @@
+gym retro snes
+
+- install a 64 bit version of python3, it asks for 3.7 not 3.8
+- MSUT be 64 bit
+- once its isntalled pip3 install gym-retro
+- find the install dir for gym and put the  ui exe there
+- get an sfc (for snes)
+
+
+ram filtering
+
+-load up game
+-run equal to previous value upon loading
+-this will filter out some of the shit, since you have just started andhavent been hit yet so the healths will stull be the same
+
+-run less than previous value to narrow down a list of values when you get hit
+-when you get a small enough batch put theminto ram watch and play the game a bit to see if you can work out which value is the one you are hunting for
+
+000636 for player health - 1590 - 8259126
+000836 for enemy health - 2102 - 8259638
+
+
+0007d0 enemy matches won, 1024 is base, 1025 is one loss 1026 is two loss - 2000 - 8259536
+
+0005d0 0 is base, 1 for 1, 2 for 2 wins - matches won - 1488 - 8259024
+
+0006C2 score    - 1730 - 8259266
+
+continue timer - 0005c6 goes from 9 backward, ez pz. - 1478 - 8259014
+
+convert hex to decimal
+add 8257536 to number (this is the snes rombase number)
+final result is what goes into json file
+
